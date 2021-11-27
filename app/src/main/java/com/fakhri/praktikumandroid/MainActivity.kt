@@ -3,6 +3,8 @@ package com.fakhri.praktikumandroid
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 
@@ -11,10 +13,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-//        val textView1 = findViewById<TextView>(R.id.textView1);
-//
-//        textView1.setOnClickListener(View.OnClickListener {
-//            Toast.makeText( this,"hallo",Toast.LENGTH_SHORT).show()
-//        })
+        val simpanButton = findViewById<Button>(R.id.simpanButton)
+        val batalButton = findViewById<Button>(R.id.batalButton)
+
+        val namaEdittext = findViewById<EditText>(R.id.namaEdittext)
+        val emailEdittext = findViewById<EditText>(R.id.emailEdittext)
+
+        simpanButton.setOnClickListener{
+            namaEdittext.setText("")
+            emailEdittext.setText("")
+        }
+        batalButton.setOnClickListener {
+            finish()
+        }
     }
 }
