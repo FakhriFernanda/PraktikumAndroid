@@ -5,109 +5,132 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="8dp"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nama"
-         />
-
-    <EditText
-        android:id="@+id/namaEdittext"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:hint="Isi Nama Lengkap"
-        android:inputType="textPersonName"
-        />
+        android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Email"
-        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="start"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama"
+                />
 
-    <EditText
-        android:id="@+id/emailEdittext"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:hint="Isi Email"
-        android:inputType="textEmailAddress"
-        />
+            <EditText
+                android:id="@+id/namaEdittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Isi Nama Lengkap"
+                android:inputType="textPersonName"
+                />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hanphone"
-        />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                />
 
-    <EditText
-        android:id="@+id/noHandphoneEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:hint="Isi Handphone"
-        android:inputType="phone"
-        />
+            <EditText
+                android:id="@+id/emailEdittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Isi Email"
+                android:inputType="textEmailAddress"
+                />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tanggal Lahir"
-        />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hanphone"
+                />
 
-    <EditText
-        android:id="@+id/tanggalLahirEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:hint="Isi Tanggal Lahir(DD/MM/YYYY)"
-        android:inputType="date"
-        />
+            <EditText
+                android:id="@+id/noHandphoneEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Isi Handphone"
+                android:inputType="phone"
+                />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Jumlah Mata Kuliah"
-        />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Lahir"
+                />
 
-    <EditText
-        android:id="@+id/jumlahMataKuliahEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:hint="Isi Jumlah Mata Kuliah"
-        android:inputType="number"
-        />
+            <EditText
+                android:id="@+id/tanggalLahirEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Isi Tanggal Lahir(DD/MM/YYYY)"
+                android:inputType="date"
+                />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="end"
-        >
-        <Button
-            android:id="@+id/simpanButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-        android:text="Simpan"
-            android:backgroundTint="@color/success"
-            android:drawableLeft="@drawable/ic_baseline_save_24"
-        />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jumlah Mata Kuliah"
+                />
 
-        <Button
-            android:id="@+id/batalButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Batal"
-            android:backgroundTint="@color/danger"
-            android:drawableLeft="@drawable/ic_baseline_cancel_24"
-        />
-    </LinearLayout>
+            <EditText
+                android:id="@+id/jumlahMataKuliahEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Isi Jumlah Mata Kuliah"
+                android:inputType="number"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end"
+                >
+                <Button
+                    android:id="@+id/simpanButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="Simpan"
+                    android:backgroundTint="@color/success"
+                    android:drawableLeft="@drawable/ic_baseline_save_24"
+                    />
+
+                <Button
+                    android:id="@+id/batalButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Batal"
+                    android:backgroundTint="@color/danger"
+                    android:drawableLeft="@drawable/ic_baseline_cancel_24"
+                    />
+            </LinearLayout>
+            <Button
+                android:id="@+id/logoutButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
 
 
 </LinearLayout>
